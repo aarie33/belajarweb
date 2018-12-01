@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{font-family:Arial;}
+.inputtext{ height:25px; border-radius:5px; width:95%; border:#CCC 1px solid; margin:2px;}
+.inputtext:focus{background:#CCE6FF;}
+.texthilang{ height:25px; border-radius:5px; width:95%; border:#CCC 0px solid;}
+.tombol{height:25px; border-radius:5px; border:#CCC 1px solid;}
+.judul{font-size:24px; border-bottom:#09F 1px solid;}
+table{margin-top:7px;border:#0CF 1px solid;}
+table td{padding-right:5px; padding-left:5px;}

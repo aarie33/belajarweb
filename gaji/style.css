@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	text-align:center;
+}
+#judul{
+	font-size:28px;
+	font-weight:bold;
+	color:#999;
+}
+table{border:#F90 solid 1px; }

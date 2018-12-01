@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CountDown</title>
+<script type="text/javascript">
+var counter = 5;
+function countDown() {
+    if(counter>=0) {
+        document.getElementById("timer").innerHTML = counter;
+    }
+    else {
+        download();
+        return;
+    }
+    counter -= 1; 
+
+    var counter2 = setTimeout("countDown()",1000);
+    return;
+}
+function download() {
+    document.location='countdown.html';
+}
+</script>
+</head>
+
+<body onload="countDown();">
+<span id="timer"></span>
+<span id="link"></span>
+</body>
+</html>

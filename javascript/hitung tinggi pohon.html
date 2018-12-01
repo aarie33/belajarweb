@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hitung tinggi pohon</title>
+<script>
+function fokus(){ document.getElementById("jarak").focus();}
+function hitung(input){
+	var jarak=parseInt(input.jarak.value);
+	var sudut=parseInt(input.sudut.value);
+	if(input.jarak.value==""){
+		alert("Jarak belum terisi!");
+		input.jarak.focus();
+		return false;
+	}else if(input.sudut.value==""){
+		alert("Sudut belum terisi!");
+		input.sudut.focus();
+		return false;
+	}else{
+		var tinggi=jarak*Math.tan(sudut);
+		alert("Tinggi pohon adalah "+tinggi+ " meter");
+	}return true;
+}
+</script>
+<style type="text/css">
+body{font-family:Georgia, "Times New Roman", Times, serif;}
+</style>
+</head>
+
+<body onload="fokus()" onunload="alert('Jangan kembali lagi!')">
+<center>
+<img src="../../../../Users/Ahmad/Pictures/pohon.png" />
+<h2><font color="red">Cari tingginya klo brani!</font></h2>
+<form name="input" onsubmit="return hitung(this)">
+<table>
+<tr><td>jarak ke pohon</td><td><input type="text" name="jarak" id="jarak" /> meter</td></tr>
+<tr><td>sudut</td><td><input type="text" name="sudut" /><font size="-6">o</font></td></tr>
+<tr><td colspan="2" align="right"><input type="submit" value="Hitung" /></td></tr>
+</table>
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Halo halo-an</title>
+<script>
+function fokus(){document.getElementById("nama").focus();}
+function cek(halo){
+	if(halo.nama.value==""){
+		alert("Nama masih belum terisi!");
+		halo.nama.focus();
+		return(false);
+	}
+	if(halo.jkel.value==""){
+		alert("Jenis kelamin masih belum terisi!");
+		halo.jkel.focus();
+		return(false);
+	}
+	if(halo.jkel.value=="Laki-laki"){
+		alert("Halo mas "+halo.nama.value+"!");
+	}else if(halo.jkel.value=="Perempuan"){
+		alert("Halo mbak "+halo.nama.value+"!"); }
+}
+</script>
+</head>
+
+<body onload="fokus()">
+<b>Halo haloan mas dan mbak</b>
+<form name="halo">
+<table>
+<tr><td>Nama</td><td><input type="text" name="nama" id="nama" /></td></tr>
+<tr><td>Jenis Kelamin</td><td><select name="jkel" id="jkel"><option></option><option>Laki-laki</option><option>Perempuan</option></select></td></tr>
+<tr><td colspan="2" align="right"><input type="submit" onclick="return cek(halo)" /></td></tr>
+</table>
+</form>
+</body>
+</html>

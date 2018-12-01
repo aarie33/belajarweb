@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html ng-app="root">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Belajar 1</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+	<style type="text/css">
+		.bold{
+			font-weight: bold;
+		}
+		.italic{
+			font-style: italic;
+		}
+		.underline{
+			text-decoration: underline;
+		}
+		.oddBaris{
+			background-color: #999;
+		}
+	</style>
+</head>
+<body>
+	{{'coba saja saya semm asem'}}
+	{{2+3}}
+
+	<div ng-controller="coba1">{{message}}</div>
+	<div ng-controller="coba1">{{angka}}</div>
+
+
+	<div ng-controller="coba2">
+		<div>
+			Favorite Word : <input type="text" ng-model="favoriteWord"/>
+			{{favoriteWord}}
+		</div>
+		<div>
+			Favorite Color :
+			<input type="radio" name="fc" value="Red" ng-model="favoriteColor">Red
+			<input type="radio" name="fc" value="Green" ng-model="favoriteColor">Green
+			<input type="radio" name="fc" value="Yellow" ng-model="favoriteColor">Yellow
+			<input type="radio" name="fc" value="Blue" ng-model="favoriteColor">Blue
+			{{favoriteColor}}
+		</div>
+		<div>
+			Favorite Shape :
+			<select ng-model="favoriteShape">
+				<option value="Circle">Circle</option>
+				<option value="Triangle">Triangle</option>
+				<option value="Square">Square</option>
+			</select>
+			{{favoriteShape}}
+		</div>
+	</div>
+	<hr>
+	Coba class
+	<div ng-controller="cobaclass">
+		<input type="number" ng-model="val">
+		<span ng-class="{bold:isBold(), italic:isItalic(), underline:isUnderlined()}">Tes kata</span>
+	</div>
+	<hr>
+	Coba repeat
+	<div ng-controller="cobaRepeat">
+		<table>
+				<tr>
+					<th>No</th>
+					<th>Kalimat</th>
+				</tr>
+
+				<tr ng-repeat="data in dt" ng-class="{oddBaris: $odd}">
+					<td>{{data.no}}</td>
+					<td>{{data.val}}</td>
+				</tr>
+		</table>
+	</div>
+	<hr>
+	Coba ng-if ng-show ng-hide
+	<div ng-controller="cobaShowHide">
+		<input type="checkbox" ng-model="show1">
+		<input type="checkbox" ng-model="show2">
+		<div ng-show="show1">Element if true show</div>
+		<div ng-hide="show2">Element if true hide</div>
+	</div>
+	<hr>
+	$watch
+	<div ng-controller="watch">
+		<input type="number" ng-model="angka">{{result}}
+	</div>
+</body>
+</html>
+
+<script>
+	angular.module('root',[])
+		.controller('coba1', ['$scope', function($scope){
+			$scope.message='hai coba Belajar';
+			$scope.angka=25*4;
+		}])
+		.controller('coba2', ['$scope', function($scope){
+			$scope.favoriteWord;
+			$scope.favoriteColor;
+			$scope.favoriteShape;
+		}])
+		.controller('cobaclass', ['$scope', function($scope){
+			$scope.val = 1;
+			$scope.isBold = function(){
+				return $scope.val === 1;
+			};
+			$scope.isItalic = function(){
+				return $scope.val === 2;
+			};
+			$scope.isUnderlined = function(){
+				return $scope.val === 3;
+			};
+		}])
+		.controller('cobaRepeat', ['$scope', function($scope){
+			$scope.dt = [
+				{no:1, val:'Hai'},
+				{no:2, val:'Aku'},
+				{no:3, val:'Adalah'},
+				{no:4, val:'Superman'}
+				];
+		}])
+		.controller('cobaShowHide', ['$scope', function($scope){
+			$scope.show1 = true;
+			$scope.show2 = true;
+		}])
+		.controller('watch', ['$scope', function($scope){
+			$scope.angka = 5;
+			$scope.$watch('angka', function(newAngka){
+				$scope.result = newAngka * 2;
+			})
+		}])
+
+</script>

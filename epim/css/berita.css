@@ -1,0 +1,79 @@
+body{
+  background: #E8E8E8
+}
+
+.header-section{
+	/* padding-top: 80px; */
+	/* min-height: 700px; */
+	/* width: 100%;
+	min-height: 500px;
+	background-image: url("../img/bg/bg_services.jpg"); */
+}
+.kontent-section{
+	height: auto;
+	width: 100%;
+}
+
+.bs-callout {
+  margin: 20px 0;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid #eee;
+}
+.bs-callout h4 {
+  margin-top: 0;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code,
+.bs-callout .highlight {
+  background-color: #fff;
+}
+
+/* Themes for different contexts */
+.bs-callout-danger {
+  /* background-color: #999; */
+  border-color: #D9534F;
+}
+.bs-callout-warning {
+  background-color: #fefbed;
+  border-color: #f1e7bc;
+}
+.bs-callout-info {
+  background-color: #f0f7fd;
+  border-color: #d0e3f0;
+}
+
+/* modified */
+.bs-callout-judul>h1{
+  color: #D9534F;
+}
+.tanggal-posting{ 
+  color:#000;
+  outline-color: #000;
+}
+.isi-berita{
+	
+}
+.sidebar {
+  margin: 20px 0;
+  padding: 15px 0px 15px 0px;
+}
+.sidebar-header{
+  
+  background-color: #D9534F;
+  color:#fff ;
+  padding: 10px 20px;
+  margin-top: 0;
+}
+.sidebar ul li {
+  font-size: 16px;
+  padding: 4px o;
+  border-bottom: dotted thin #CCC;
+}
+.sidebar ul li a{
+  color: #5A5A5A;
+}
+.sidebar a:hover {
+  color: #F60;
+}

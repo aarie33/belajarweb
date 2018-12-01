@@ -1,0 +1,242 @@
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+
+
+.navbar-inverse .navbar-nav > li > a{
+	color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+	color:#888;
+}
+body{
+	padding:0;
+}
+/* Beranda */
+.beranda-section{
+	/* padding-top: 80px; */
+	/* min-height: 700px; */
+	/* background-image: url("../img/slider/slide1.jpg"); */
+}
+.desc-beranda{
+	padding-top: 350px;
+	text-align: center;
+}
+
+/* Epim2015 */
+.epim2015-section{
+	padding-top: 80px;
+	min-height: 700px;
+	background: #4285F4;
+}
+.heading-epim2015{
+	padding-bottom: 9px;
+    margin: 40px 0 20px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.konten-epim2015{
+	color:#fff;
+}
+
+
+/* Berita */
+.berita-section{
+	padding-top: 80px;
+	min-height: 700px;
+	/* background-color: #eeeeee; */
+	/* background: #E8E8E8; */
+	background-color: #D9534F;
+	/* background-image: url("../img/bg/bg_berita.png"); */
+}
+.heading-berita{
+	color: #fff;
+	padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+.judul-berita{
+	padding: 5px 5px 5px 25px;
+}
+.isi-berita{
+	padding: 0px 25px 25px 25px;
+	margin: 0;
+}
+.tanggal-publish-berita{
+	width: 175px;
+	color: #fff;
+	font-size: 90%;
+	font-weight: bold;
+	padding: 10px 10px 10px 25px;
+	/* background-color: #4390DF; */
+	background-color: #9D9D9D;
+}
+.item-berita{
+	color: #fff;
+	/* background-color: #99999; */
+	/* background-color:#337AB7; */
+	border: 1px solid #D9534F;
+	background-color: #C9302C;
+	
+}
+.item-berita:hover{
+	color: #fff;
+	/* background-color:#04698A; */
+	border: 1px solid #fff;
+	background-color: #D9534F;
+	
+}
+
+/* Kegiatan */
+ol>li{
+	margin-top: 10px;
+}
+.kegiatan-section{
+	padding-top: 80px;
+	min-height: 700px;
+	background: #074E68;
+	/* background: #64a5a7; */
+	/* background: #FBBB04; */
+}
+.heading-kegiatan{
+	padding-bottom: 9px;
+    margin: 40px 0 20px;
+    color: #fff;
+    border-bottom: 1px solid #fff;/*
+	padding-bottom: 30px;
+	padding-top: 30px;
+	color: #fff;*/
+}
+.desc-kegiatan{
+	color: #fff;
+	/* text-align: center; */
+}
+.item-kegiatan{
+	text-align: center;
+	color:#fff;
+}
+.myLink{
+	color:#fff;
+}
+.myLink:hover{
+	font-weight: bold;
+	text-decoration: none;
+}
+.imgKegiatan{
+	opacity: 0.75;
+	border: 1px solid #fff;
+}
+a:hover{
+text-decoration: none;
+}
+
+.imgKegiatan:hover{
+	opacity: 1;
+}
+
+
+/* Daftar */
+.daftar-section{
+	padding-top: 80px;
+	min-height: 700px;
+	background: #E7EAF2;
+	/* background: #34A853; */
+}
+.heading-daftar{
+	padding-bottom: 9px;
+    margin: 40px 0 20px;
+    color: #5a5a5a;
+    border-bottom: 1px solid #888;
+}
+.heading-alur-daftar{
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+.konten-alur-daftar{
+	color: #888;
+}
+.pilih-kategori > .btn-lg{
+	border-radius: 0;
+	border:0;
+}
+.btn-pilih-kategori{
+	color:#fff;
+	/*background: #9D9D9D;*/
+	background:#619F4E;
+}
+.btn-pilih-kategori:hover{
+	color:#fff;
+	background: #222;
+}
+
+
+/* Kontak */
+.kontak-section{
+	padding-top: 80px;
+	min-height: 700px;
+	background: #2f2f2f;
+	/* background: #E94335;  merah*/
+}
+.heading-kontak{
+	padding-bottom: 9px;
+    margin: 40px 0 20px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.panel-black{
+	background: #2b2b2b;
+	padding: 25px;
+	border-radius: 5px;
+}
+
+#social-network{
+	color:#888;
+}
+
+#social-network:hover{
+	color:#9D9D9D;
+}
+
+
+
+
+
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}

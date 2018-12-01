@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Menghitung Volume</title>
+<script>
+function fokus(){ document.getElementById("panjang").focus();}
+function hitung(input){
+	var panjang=input.panjang.value;
+	var lebar=input.lebar.value;
+	var tinggi=input.tinggi.value;
+	if(panjang==""){
+		alert("Panjang bangun belum terisi!");
+		input.panjang.focus();
+		return false;
+	}else if(lebar==""){
+		alert("Lebar bangun belum terisi!");
+		input.lebar.focus();
+		return false;
+	}else if(tinggi==""){
+		alert("Tinggi bangun belum terisi!");
+		input.tinggi.focus();
+		return false;
+	}else{
+		var volume=panjang*lebar*tinggi*1000;
+		//alert("Volume bangun="+panjang+"*"+lebar+"*"+tinggi+"="+volume);
+		alert("Volume bangung= p*l*t = "+volume+" liter");
+	}return true;
+}
+</script>
+</head>
+
+<body onload="fokus()">
+<center>
+<h2><font color="red">Hitung aja klo brani!</font></h2>
+<form name="input" onsubmit="return hitung(this)">
+<table>
+<tr><td>Panjang</td><td><input type="text" name="panjang" id="panjang" /> m</td></tr>
+<tr><td>Lebar</td><td><input type="text" name="lebar" /> m</td></tr>
+<tr><td>Tinggi</td><td><input type="text" name="tinggi" /> m</td></tr>
+<tr><td colspan="2" align="right"><input type="submit" value="Hitung" /></td></tr>
+</table>
+</form>
+</center>
+</body>
+</html>

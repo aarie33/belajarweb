@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ui-datepicker
+{
+   font-family: Arial;
+   font-size: 13px;
+   z-index: 1003 !important;
+   display: none;
+}

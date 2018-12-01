@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Arial;
+}
+body#hal_menu1 li#menu1, body#hal_menu2 li#menu2{
+	background:#FF0;
+}
+ul{
+	right:0;
+	left:0;
+	top:-16px;
+	height:30px;
+	position:absolute;
+	background:#09F;
+}
+ul li{
+	height:30px;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+	list-style:none;
+}
+ul li a{
+	text-decoration:none;
+	top:10px;
+	position:relative;
+}

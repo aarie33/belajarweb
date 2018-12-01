@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+#kepala{
+	font:"Arial Black", Gadget, sans-serif;
+	background-color:#CCF;
+}
+#menu{
+	border-bottom:#F00 solid 1px;
+}
+#mnu{
+	padding:0px 20px 0px 20px ;
+	font:14px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#FFF;
+}
+.menu {
+    background: #778899;
+    height: 30px;
+    list-style-type: none;
+    margin: 0;
+	padding:0px;
+}
+.menu li {
+    border-left: solid 1px white;
+    float: left;
+    height: 30px;
+}
+.menu li a {
+    color: #FFF;
+    font: 12px arial, verdana, sans-serif;
+    font-weight: bold;
+    padding: 9px 40px;
+	display:block;
+    text-decoration: none;
+}
+.menu li:hover {
+	background: #616161;
+	position: relative; 
+	cursor:pointer;
+}
+.menu li:hover a { text-decoration: underline; }
+.menu li:hover ul {
+    background-color: #3f4a54;
+    border: 1px solid grey;
+    left: 0px;
+    padding: 3px;
+    top: 30px;
+    width: 160px;
+}
+.menu li:hover ul li { border: none; height: 18px; }
+.menu li:hover ul li a {
+    background-color: #778899;
+    border: 1px solid transparent;
+    color: #fff;
+    display: block;
+    font-size: 11px;
+    height: auto;
+    line-height: 18px;
+    padding: 0px;
+    text-decoration: none;
+    text-indent: 5px;
+    width: 158px;
+    padding: 3px;
+}
+.menu li:hover ul li a:hover {
+    background: silver;
+    border: solid 1px #444;
+    color: #000;
+    height: auto;
+    padding: 3px;
+}
+.menu ul {
+    left: -9999px;
+    list-style-type: none;
+    position: absolute;
+    top: -9999px;
+}

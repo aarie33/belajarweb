@@ -1,0 +1,20 @@
+<html>
+<head><title>Tiruan Javascript</title></head>
+<body>
+<form name=biodata>
+Ketikkan inputan lalu klik area kosong</br>
+<input type="text" name="nama" onchange="tiru()"/></br>
+Tiruan</br>
+<input type="text" name="hasil" readonly="true"/>
+
+<script language="javascript" type="text/javascript">
+function tiru()
+{
+var isi=document.biodata;
+var one=isi.nama.value;
+isi.hasil.value=one;
+}
+</script>
+</form>
+</body>
+</html>

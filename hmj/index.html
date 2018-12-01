@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Belajar HTML</title>
+<style>
+    body{
+        background:#fff;
+        text-align: center;
+    }
+    input{
+        margin-bottom: 5px;
+    }
+</style>
+<link type="text/css" rel="stylesheet" href="..\..\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+</head>
+
+<body>
+<h1>Form Input Mahasiswa</h1> <!--judul-->
+    
+<form>
+NIM <input type="text" name="nim" required><br> <!--br untuk ganti baris -->
+Nama <input type="text" name="nama" required><br>
+    
+    <!-- membuat pilihan -->
+Prodi <select name="prodi" required>
+        <option></option>
+        <option>Managemen Informatika</option>
+        <option>Teknik Komputer</option>
+        <option>Teknik Informatika</option>
+    </select><br>
+
+<input type="submit" value="Simpan" class="btn btn-warning"> <!--tombol simpan-->
+</form>
+
+<h2>Tabel</h2>
+<table align="center" class="table table-bordered table-hover">
+    <tr>
+        <th>No.</th>
+        <th>NIM</th>
+        <th>Nama Mahasiswa</th>
+        <th>Program Studi</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>E41167726</td>
+        <td>Fajar Rahmad</td>
+        <td>Teknik Informatika</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>E31173672</td>
+        <td>Hari Mukti</td>
+        <td>Manajemen Informatika</td>
+    </tr>
+</table>
+</body>
+</html>

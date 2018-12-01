@@ -1,0 +1,5 @@
+[gammu]
+# isikan port modem USB di bawah ini
+port = COM7:
+# isikan jenis connection di bawah ini
+connection = maximum speed 460800

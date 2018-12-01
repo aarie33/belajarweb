@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>OnChange</title>
+<script>
+function fokus(){document.getElementById("t_isi").focus();}
+function tiru(isi){
+	isi.isi_tiru.value=isi.isi_aja.value;
+}
+</script>
+</head>
+
+<body onload="fokus()">
+<form name="isi">
+Isian <input type="text" name="isi_aja" id="t_isi" onkeyup="tiru(isi)" />
+Tiruan<input type="text" name="isi_tiru" readonly="readonly" />
+</form>
+</body>
+</html>

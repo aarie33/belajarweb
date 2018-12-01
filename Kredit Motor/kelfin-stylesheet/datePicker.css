@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+/*style untuk DatePicker*/
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+}
+p, span, div, ol, ul, li, td, button, input, textarea, form
+{
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #C8D7EB;
+   outline: none;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #C8D7EB;
+}
+a:active
+{
+   color: #C8D7EB;
+}
+a:hover
+{
+   color: #376BAD;
+   text-decoration: underline;
+}
+#jQueryDatePicker1
+{
+   border: 1px #C0C0C0 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+
+.ui-datepicker
+{
+   font-family: Arial;
+   font-size: 13px;
+   z-index: 1003 !important;
+   display: none;
+}
+#jQueryDatePicker2
+{
+   border: 1px #C0C0C0 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}

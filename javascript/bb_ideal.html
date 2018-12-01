@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>BB Ideal</title>
+<script>
+function fokus(){document.getElementById("bb").focus();}
+function hitung(input){
+	var ideal;
+	var obes;
+	var kurus;
+	if(input.bb.value==""){
+		alert("Isikan berat badan!");
+		input.bb.focus();
+		return false;
+	}else if(input.tb.value==""){
+		alert("Isikan tinggi badan!");
+		input.tb.focus();
+		return false;
+	}else{
+	ideal=(input.tb.value-100)*90/100;
+	//ideal=input.tb.value-110;
+	//ideal=input.bb.value / (input.tb.value * input.tb.value);
+	obes=ideal+(ideal*20/100);
+	kurus=ideal-(ideal*10/100);
+	if(input.bb.value>obes){
+		pas=input.bb.value-ideal;
+		alert("Anda obesitas, harus mengurangi "+pas+"kg");
+	}else if(input.bb.value<kurus){
+		pas=ideal-input.bb.value;
+		alert("Anda kurus, harus menambah "+pas+"kg");
+	}else{alert("Anda ideal!");}
+}}
+</script>
+</head>
+
+<body onLoad="fokus()">
+<form name="input" onSubmit="return hitung(input)">
+<h3>Hitung berat badan ideal</h3>
+Berat badan <input type="text" name="bb" id="bb" />
+Tinggi badan <input type="text" name="tb" />
+<input type="submit"/>
+</form>
+</body>
+</html>

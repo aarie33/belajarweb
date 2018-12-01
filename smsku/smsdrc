@@ -1,0 +1,23 @@
+[gammu]
+# isikan port modem USB di bawah ini
+port = COM7:
+# isikan jenis connection di bawah ini
+connection = maximum speed 460800
+
+[smsd]
+service = mysql
+logfile = smsdlog
+debuglevel = 0
+# Inisial modem
+phoneid = Server1
+commtimeout = 10
+sendtimeout = 10
+PIN = 1234
+pc = localhost
+
+# isikan user untuk akses ke MySQL (xampp default root)
+user = root
+# isikan password user untuk akses ke MySQL (xampp defaul null )
+password = 
+# isikan nama database untuk Gammu
+database = smskudb

@@ -1,0 +1,3 @@
+#RewriteEngine On
+#RewriteRule ^ ([^/]*)\.xml$ t2_rss.php [L]
+#RewriteRule ^ ([^/]*)\.xml$ t2_sitemap.php [L]
